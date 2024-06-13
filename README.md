@@ -19,8 +19,8 @@ docker-compose up -d
 ```
 php artisan migrate
 ```
-- Agora vamos colocar nossa API Laravel no ar com:
+- Precisamos colocar nosso servidor Laravel no ar, fazemos isso com:
 ```
 php artisan serve
 ```
-- Agora basta copiar o endereço que o Laravel iniciou o servidor (geralmente **http://127.0.0.1:8000**) e colar este endereço no Postman com as devidas rotas inseridas (solicitadas no desafio), para iniciar os testes.
+- Neste momento basta copiar o endereço que o Laravel iniciou o servidor (geralmente **http://127.0.0.1:8000**) e colar este endereço no Postman com as devidas rotas inseridas (solicitadas no desafio), para iniciar os testes.
