@@ -1,0 +1,10 @@
+version: '3'
+services:
+  db:
+    build: .
+    container_name: crud_backend_motoca
+    restart: always
+    environment:
+      POSTGRES_DB: crud_db
+    ports:
+      - 5432:5432
