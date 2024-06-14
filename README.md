@@ -2,9 +2,9 @@
 Este repositório é referente ao teste para vaga de Desenvolvedor de Software Jr da Motoca Systems. Você pode acessar o teste aqui: https://github.com/WellitonCunha/teste-motoca-systems
 
 ## Tecnologias utilizadas nesta solução para o problema proposto:
-PHP + Laravel
-PostgreSQL
-Docker
+- PHP + Laravel
+- PostgreSQL
+- Docker
 
 ## Instruções
 Para executar a minha solução de CRUD com Laravel + PostgreSQL, siga essas etapas:
