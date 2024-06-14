@@ -19,9 +19,9 @@ docker-compose up -d
 ```
 composer update
 ```
-- Agora, ainda na raiz do repositório execute (para realizar as migrações, e criar as tabelas no banco de dados):
+- Agora, ainda na raiz do repositório execute (para realizar as migrações, criar as tabelas e injetar alguns valores no banco de dados):
 ```
-php artisan migrate
+php artisan migrate:fresh --seed
 ```
 - Precisamos colocar nosso servidor Laravel no ar, fazemos isso com:
 ```
