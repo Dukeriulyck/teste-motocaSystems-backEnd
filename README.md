@@ -32,3 +32,5 @@ php artisan serve
 ```
 php -S localhost:8000 -t public
 ```
+### Dicas
+É preciso criar primeiro uma **Categoria** para depois criar um **Produto**. Motivo: para você criar um produto, você precisa **obrigatoriamente** de um **id** de uma categoria. Este CRUD valida esta regra, logo, ao tentar criar um produto sem id de categoria, você receberá um erro.
