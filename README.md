@@ -15,6 +15,10 @@ Para executar a minha solução de CRUD com Laravel + PostgreSQL, siga essas eta
 ```
 docker-compose up -d
 ```
+- Precisamos atualizar as dependências, utilize o comando:
+```
+composer update
+```
 - Agora, ainda na raiz do repositório execute (para realizar as migrações, e criar as tabelas no banco de dados):
 ```
 php artisan migrate
