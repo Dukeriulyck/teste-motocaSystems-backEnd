@@ -28,3 +28,7 @@ php artisan migrate
 php artisan serve
 ```
 - Neste momento basta copiar o endereço que o Laravel iniciou o servidor (geralmente **http://127.0.0.1:8000**) e colar este endereço no Postman com as devidas rotas solicitadas pelo desafio, para iniciar os testes.
+- _Caso você esteja utilizando Windows ou MAC, e tiver instalado o **PHP** e **Composer** pelo **Lavarel Herd**, você pode se deparar com um problema ao usar o comando acima (php artisan serve): "Failed to listen on 127.0.0.1:8000 (reason: ?)". Para contornar isso, você pode inicializar o servidor diretamente com um comando PHP Start (php -S):_
+```
+php -S localhost:8000 -t public
+```
