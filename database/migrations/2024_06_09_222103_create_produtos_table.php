@@ -17,7 +17,6 @@ return new class extends Migration
             $table->text('descricao');
             $table->float('preco');
             $table->unsignedBigInteger('categoria_id');
-            $table->timestamps();
 
             $table->foreign('categoria_id')->references('id')->on('categorias');
         });
