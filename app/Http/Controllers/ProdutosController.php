@@ -48,7 +48,7 @@ class ProdutosController extends Controller
     {
         try {
             $this->model->create($request->all());
-            return response('Produto criado com sucesso');
+            return response($request);
         } catch(\Throwable $th) {
             throw $th;
         }
@@ -82,7 +82,7 @@ class ProdutosController extends Controller
         try {
             $dados = $request->all();
             $produtos->fill($dados)->save();
-            return response('Produto atualizado');
+            return response($dados);
         } catch(\Throwable $th) {
             throw $th;
         }

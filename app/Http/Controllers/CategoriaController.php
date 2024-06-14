@@ -48,7 +48,7 @@ class CategoriaController extends Controller
     {
         try {
             $this->model->create($request->all());
-            return response('Categoria criada com sucesso');
+            return response($request);
         } catch(\Throwable $th) {
             throw $th;
         }
@@ -82,7 +82,7 @@ class CategoriaController extends Controller
         try {
             $dados = $request->all();
             $categorias->fill($dados)->save();
-            return response('Categoria atualizada');
+            return response($dados);
         } catch(\Throwable $th) {
             throw $th;
         }
