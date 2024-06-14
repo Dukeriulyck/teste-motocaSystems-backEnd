@@ -16,7 +16,9 @@ class ProdutosSeeder extends Seeder
             'nome' => 'Produto 1',
             'descricao' => 'Descrição do produto 1',
             'preco' => 105.87,
-            'categoria_id' => 2
+            'categoria_id' => 2,
+            'created_at' => now(),
+            'updated_at'=> now(),
         ]);
     }
 }
