@@ -27,12 +27,13 @@ php artisan migrate:fresh --seed
 ```
 php artisan serve
 ```
-- Neste momento já pode-se iniciar os teste no Postman:
-- Para testar o CRUD de Categorias: [<img src="https://run.pstmn.io/button.svg" alt="Run In Postman" style="width: 128px; height: 32px;">](https://app.getpostman.com/run-collection/25152432-f27986ed-cda1-4bb1-a920-34d17c7dcddb?action=collection%2Ffork&source=rip_markdown&collection-url=entityId%3D25152432-f27986ed-cda1-4bb1-a920-34d17c7dcddb%26entityType%3Dcollection%26workspaceId%3D2e130b77-f16e-4748-87e5-7b29c357e85e)
-- Para testar o CRUD de Produtos: [<img src="https://run.pstmn.io/button.svg" alt="Run In Postman" style="width: 128px; height: 32px;">](https://app.getpostman.com/run-collection/25152432-c720f63f-5434-4f38-96e7-dd8a4475f1c1?action=collection%2Ffork&source=rip_markdown&collection-url=entityId%3D25152432-c720f63f-5434-4f38-96e7-dd8a4475f1c1%26entityType%3Dcollection%26workspaceId%3D2e130b77-f16e-4748-87e5-7b29c357e85e)
-- _Caso você esteja utilizando Windows ou MAC, e tiver instalado o **PHP** e **Composer** pelo **Lavarel Herd**, você pode se deparar com um problema ao usar o comando acima (php artisan serve): "Failed to listen on 127.0.0.1:8000 (reason: ?)". Para contornar isso, você pode inicializar o servidor diretamente com um comando PHP Start (php -S):_
+- _Observação: Caso você esteja utilizando Windows ou MAC, e tiver instalado o **PHP** e **Composer** pelo **Lavarel Herd**, você pode se deparar com um problema ao usar o comando acima (php artisan serve): "Failed to listen on 127.0.0.1:8000 (reason: ?)". Caso isso tenha acontecido com você, você pode contornar esse erro inicializando o servidor diretamente com um comando PHP Start (php -S):_
 ```
 php -S 127.0.0.1:8000 -t public
 ```
+- Neste momento já pode-se iniciar os teste no Postman:
+- Para testar o CRUD de Categorias: [<img src="https://run.pstmn.io/button.svg" alt="Run In Postman" style="width: 128px; height: 32px;">](https://app.getpostman.com/run-collection/25152432-f27986ed-cda1-4bb1-a920-34d17c7dcddb?action=collection%2Ffork&source=rip_markdown&collection-url=entityId%3D25152432-f27986ed-cda1-4bb1-a920-34d17c7dcddb%26entityType%3Dcollection%26workspaceId%3D2e130b77-f16e-4748-87e5-7b29c357e85e)
+- Para testar o CRUD de Produtos: [<img src="https://run.pstmn.io/button.svg" alt="Run In Postman" style="width: 128px; height: 32px;">](https://app.getpostman.com/run-collection/25152432-c720f63f-5434-4f38-96e7-dd8a4475f1c1?action=collection%2Ffork&source=rip_markdown&collection-url=entityId%3D25152432-c720f63f-5434-4f38-96e7-dd8a4475f1c1%26entityType%3Dcollection%26workspaceId%3D2e130b77-f16e-4748-87e5-7b29c357e85e)
+
 ### Dicas
 É preciso criar primeiro uma **Categoria** para depois criar um **Produto**. Motivo: para você criar um produto, você precisa **obrigatoriamente** de um **id** de uma categoria. Este CRUD valida esta regra, logo, ao tentar criar um produto sem id de categoria, você receberá um erro.
