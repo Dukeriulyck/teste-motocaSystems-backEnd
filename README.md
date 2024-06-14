@@ -15,7 +15,7 @@ Para executar a minha solução de CRUD com Laravel + PostgreSQL, siga essas eta
 ```
 docker-compose up -d
 ```
-- Precisamos atualizar as dependências do nosso projeto, utilize o comando:
+- Atualize as dependências do projeto no seu ambiente local com o comando:
 ```
 composer update
 ```
