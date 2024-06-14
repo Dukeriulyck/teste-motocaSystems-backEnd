@@ -15,7 +15,7 @@ class ProdutosController extends Controller
 
     public function getById(string $id)
     {
-        $produtos = $this->model->find($id);
+        $produtos = $this->model->with('categoria')->find($id);
         if(!$produtos) {
             return response('Produto não localizado');
         }
