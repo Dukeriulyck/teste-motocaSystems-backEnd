@@ -32,7 +32,7 @@ php artisan serve
 - - Para testar os **produtos**, acesse o link: https://www.postman.com/cryosat-technologist-54679747/workspace/my-workspace/collection/25152432-c720f63f-5434-4f38-96e7-dd8a4475f1c1?action=share&creator=25152432
 - _Caso você esteja utilizando Windows ou MAC, e tiver instalado o **PHP** e **Composer** pelo **Lavarel Herd**, você pode se deparar com um problema ao usar o comando acima (php artisan serve): "Failed to listen on 127.0.0.1:8000 (reason: ?)". Para contornar isso, você pode inicializar o servidor diretamente com um comando PHP Start (php -S):_
 ```
-php -S localhost:8000 -t public
+php -S 127.0.0.1:8000 -t public
 ```
 ### Dicas
 É preciso criar primeiro uma **Categoria** para depois criar um **Produto**. Motivo: para você criar um produto, você precisa **obrigatoriamente** de um **id** de uma categoria. Este CRUD valida esta regra, logo, ao tentar criar um produto sem id de categoria, você receberá um erro.
