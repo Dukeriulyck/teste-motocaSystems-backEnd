@@ -15,7 +15,7 @@ Para executar a minha solução de CRUD com Laravel + PostgreSQL, siga essas eta
 ```
 docker-compose up -d
 ```
-- Precisamos atualizar as dependências, utilize o comando:
+- Precisamos atualizar as dependências do nosso projeto, utilize o comando:
 ```
 composer update
 ```
@@ -27,4 +27,4 @@ php artisan migrate
 ```
 php artisan serve
 ```
-- Neste momento basta copiar o endereço que o Laravel iniciou o servidor (geralmente **http://127.0.0.1:8000**) e colar este endereço no Postman com as devidas rotas inseridas (solicitadas no desafio), para iniciar os testes.
+- Neste momento basta copiar o endereço que o Laravel iniciou o servidor (geralmente **http://127.0.0.1:8000**) e colar este endereço no Postman com as devidas rotas solicitadas pelo desafio, para iniciar os testes.
