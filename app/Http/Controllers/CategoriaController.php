@@ -13,7 +13,7 @@ class CategoriaController extends Controller
         $this->model = $categorias;
     }   
     /**
-     * Display a listing of the resource.
+     * Imprime todas as categorias.
      */
     public function index()
     {
@@ -34,15 +34,7 @@ class CategoriaController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
+     * Salva uma categoria
      */
     public function store(Request $request)
     {
@@ -55,23 +47,7 @@ class CategoriaController extends Controller
     }
 
     /**
-     * Display the specified resource.
-     */
-    public function show(string $id)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(string $id)
-    {
-        //code
-    }
-
-    /**
-     * Update the specified resource in storage.
+     * Atualiza uma categoria
      */
     public function update(Request $request, string $id)
     {
@@ -89,7 +65,7 @@ class CategoriaController extends Controller
     }
 
     /**
-     * Remove the specified resource from storage.
+     * Deleta uma categoria
      */
     public function destroy(string $id)
     {

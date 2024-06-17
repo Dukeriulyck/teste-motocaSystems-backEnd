@@ -26,7 +26,7 @@ class ProdutosController extends Controller
         }
     }
     /**
-     * Display a listing of the resource.
+     * Imprime todos os produtos
      */
     public function index()
     {
@@ -34,15 +34,7 @@ class ProdutosController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
+     * Salva um produto
      */
     public function store(Request $request)
     {
@@ -55,23 +47,7 @@ class ProdutosController extends Controller
     }
 
     /**
-     * Display the specified resource.
-     */
-    public function show(string $id)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(string $id)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
+     * Atualiza um produto
      */
     public function update(Request $request, string $id)
     {
@@ -89,7 +65,7 @@ class ProdutosController extends Controller
     }
 
     /**
-     * Remove the specified resource from storage.
+     * Deleta um produto
      */
     public function destroy(string $id)
     {
